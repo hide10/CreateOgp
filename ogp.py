@@ -10,9 +10,10 @@ FONT_FILE = "C:\\Users\\kobayashi\\Dropbox\\blog\\OgpMake\\Noto_Sans_JP\\NotoSan
 
 
 def create_ogp(text):
+    # 新しいImageオブジェクトを生成
     im = Image.new("RGB", (OGP_WIDTH, OGP_HEIGHT), BG_COLOR)
+    # Drawオブジェクトを生成
     draw = ImageDraw.Draw(im)
-
     font = ImageFont.truetype(FONT_FILE, 90)
     # テキストを折り返す
     wrap_text = textwrap.fill(text, TEXT_WRAP)
@@ -21,7 +22,7 @@ def create_ogp(text):
                 (OGP_HEIGHT - text_height) / 2 - 50)
     draw.text(position, wrap_text, font=font)
 
-    im.save(text + ".png", format="PNG")
+    im.save(text + ".png", "PNG")
     im.show()
 
 
