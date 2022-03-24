@@ -1,11 +1,11 @@
-import textwrap
+import sys, textwrap
 from xml.dom.expatbuilder import TEXT_NODE
 from PIL import Image, ImageDraw, ImageFont
 
 OGP_WIDTH = 1200
 OGP_HEIGHT = 630
-TEXT_WRAP = 10
 BG_COLOR = "#309AC1"
+TEXT_WRAP = 10
 FONT_FILE = "C:\\Users\\kobayashi\\Dropbox\\blog\\OgpMake\\Noto_Sans_JP\\NotoSansJP-Light.otf"
 
 
@@ -25,4 +25,5 @@ def create_ogp(text):
     im.show()
 
 
-create_ogp("新型コロナワクチン接種、3回目は人生最悪クラスの悪寒を経験する")
+for in_file in sys.argv[1:]:
+    create_ogp(in_file)
