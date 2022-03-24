@@ -17,4 +17,13 @@
 
     python create_ogp.py 文字列A 文字列B
 
+## カスタマイズ
+
+プログラム上部にある定義文字列っぽいものを弄るとカスタマイズできます。
+
+* OGP_WIDTH: 出力画像横幅
+* OGP_HEIGHT: 出力画像縦幅
+* BG_COLOR: 背景色
+* TEXT_WRAP_WIDTH: 折り返し幅
+
 以上
