@@ -26,4 +26,10 @@
 * BG_COLOR: 背景色
 * TEXT_WRAP_WIDTH: 折り返し幅
 
+## 謝辞
+
+基本機能実装時、下記ブログの記事を参考にさせて頂きました。貴重な情報の公開ありがとうございました。
+
+[ktaskn.jp](https://ktaskn.jp/post/9)
+
 以上
